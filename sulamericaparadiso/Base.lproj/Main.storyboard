@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="height" constant="48" id="FNw-PP-Tyk"/>
                                     <constraint firstAttribute="width" constant="48" id="Vha-Ox-q7R"/>
                                 </constraints>
-                                <state key="normal" image="btn-play"/>
+                                <state key="normal" image="btn-play-disabled"/>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PGj-00-amY">
                                 <constraints>
@@ -90,7 +90,7 @@
         <image name="background" width="375" height="667"/>
         <image name="background-logo" width="240" height="163"/>
         <image name="btn-pause" width="64" height="64"/>
-        <image name="btn-play" width="64" height="64"/>
+        <image name="btn-play-disabled" width="64" height="64"/>
         <image name="volume-off" width="32" height="32"/>
         <image name="volume-on" width="32" height="32"/>
     </resources>

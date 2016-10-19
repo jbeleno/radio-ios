@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2667981DB82E4E00B1416C /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2667971DB82E4E00B1416C /* RadioPlayer.swift */; };
+		0D26679B1DB8314D00B1416C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D26679A1DB8314D00B1416C /* AVFoundation.framework */; };
+		0D26679D1DB8332E00B1416C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D26679C1DB8332E00B1416C /* MediaPlayer.framework */; };
 		0D6DD4D21DB6CDF400C20AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6DD4D11DB6CDF400C20AAA /* AppDelegate.swift */; };
 		0D6DD4D41DB6CDF400C20AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6DD4D31DB6CDF400C20AAA /* ViewController.swift */; };
 		0D6DD4D71DB6CDF400C20AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6DD4D51DB6CDF400C20AAA /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2667971DB82E4E00B1416C /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		0D26679A1DB8314D00B1416C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0D26679C1DB8332E00B1416C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0D6DD4CE1DB6CDF400C20AAA /* sulamericaparadiso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sulamericaparadiso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6DD4D11DB6CDF400C20AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6DD4D31DB6CDF400C20AAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D26679D1DB8332E00B1416C /* MediaPlayer.framework in Frameworks */,
+				0D26679B1DB8314D00B1416C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2667991DB8314C00B1416C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D26679C1DB8332E00B1416C /* MediaPlayer.framework */,
+				0D26679A1DB8314D00B1416C /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0D6DD4C51DB6CDF300C20AAA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +98,7 @@
 				0D6DD4E51DB6CDF400C20AAA /* sulamericaparadisoTests */,
 				0D6DD4F01DB6CDF400C20AAA /* sulamericaparadisoUITests */,
 				0D6DD4CF1DB6CDF400C20AAA /* Products */,
+				0D2667991DB8314C00B1416C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +121,7 @@
 				0D6DD4D81DB6CDF400C20AAA /* Assets.xcassets */,
 				0D6DD4DA1DB6CDF400C20AAA /* LaunchScreen.storyboard */,
 				0D6DD4DD1DB6CDF400C20AAA /* Info.plist */,
+				0D2667971DB82E4E00B1416C /* RadioPlayer.swift */,
 			);
 			path = sulamericaparadiso;
 			sourceTree = "<group>";
@@ -259,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2667981DB82E4E00B1416C /* RadioPlayer.swift in Sources */,
 				0D6DD4D41DB6CDF400C20AAA /* ViewController.swift in Sources */,
 				0D6DD4D21DB6CDF400C20AAA /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +525,7 @@
 				0D6DD4F81DB6CDF400C20AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D6DD4F91DB6CDF400C20AAA /* Build configuration list for PBXNativeTarget "sulamericaparadisoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				0D6DD4FB1DB6CDF400C20AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D6DD4FC1DB6CDF400C20AAA /* Build configuration list for PBXNativeTarget "sulamericaparadisoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +543,7 @@
 				0D6DD4FE1DB6CDF400C20AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

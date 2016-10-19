@@ -31,6 +31,9 @@
                                     <constraint firstAttribute="height" constant="48" id="owk-Ai-dVI"/>
                                 </constraints>
                                 <state key="normal" image="btn-pause"/>
+                                <connections>
+                                    <action selector="pause_stream:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNm-vy-e1J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTe-ab-0eg">
                                 <constraints>
@@ -38,6 +41,9 @@
                                     <constraint firstAttribute="width" constant="48" id="Vha-Ox-q7R"/>
                                 </constraints>
                                 <state key="normal" image="btn-play-disabled"/>
+                                <connections>
+                                    <action selector="play_stream:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j72-3l-dwK"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PGj-00-amY">
                                 <constraints>
@@ -65,21 +71,26 @@
                             <constraint firstItem="PGj-00-amY" firstAttribute="leading" secondItem="24C-Gn-BJw" secondAttribute="trailing" constant="8" id="8wQ-6t-kel"/>
                             <constraint firstAttribute="trailing" secondItem="4Z6-ba-8ES" secondAttribute="trailing" id="D4z-Dr-rk1"/>
                             <constraint firstItem="14V-fi-qFm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-32" id="ECM-Z1-OcM"/>
-                            <constraint firstItem="PGj-00-amY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="Ked-vn-JVX"/>
+                            <constraint firstItem="PGj-00-amY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="48" id="Ked-vn-JVX"/>
                             <constraint firstItem="xTe-ab-0eg" firstAttribute="top" secondItem="COw-Fi-tq1" secondAttribute="bottom" constant="28" id="Kwv-VN-maT"/>
                             <constraint firstItem="COw-Fi-tq1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P2k-Hz-lmJ"/>
                             <constraint firstItem="CZu-9j-udL" firstAttribute="leading" secondItem="PGj-00-amY" secondAttribute="trailing" constant="8" id="fNu-uO-nLP"/>
-                            <constraint firstAttribute="trailing" secondItem="CZu-9j-udL" secondAttribute="trailing" constant="8" id="fRG-wF-yt1"/>
+                            <constraint firstAttribute="trailing" secondItem="CZu-9j-udL" secondAttribute="trailing" constant="16" id="fRG-wF-yt1"/>
                             <constraint firstItem="14V-fi-qFm" firstAttribute="top" secondItem="COw-Fi-tq1" secondAttribute="bottom" constant="28" id="gUu-6u-u2C"/>
-                            <constraint firstItem="24C-Gn-BJw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="kNd-B8-P5f"/>
+                            <constraint firstItem="24C-Gn-BJw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="kNd-B8-P5f"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Z6-ba-8ES" secondAttribute="bottom" id="nTm-RS-mFq"/>
                             <constraint firstItem="4Z6-ba-8ES" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nXY-EC-Jb9"/>
                             <constraint firstItem="PGj-00-amY" firstAttribute="top" secondItem="xTe-ab-0eg" secondAttribute="bottom" constant="32" id="p9Z-Io-8y4"/>
-                            <constraint firstAttribute="trailing" secondItem="PGj-00-amY" secondAttribute="trailing" constant="40" id="r6S-EW-QOf"/>
+                            <constraint firstAttribute="trailing" secondItem="PGj-00-amY" secondAttribute="trailing" constant="48" id="r6S-EW-QOf"/>
                             <constraint firstItem="CZu-9j-udL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="299" id="zdS-K5-gRc"/>
                             <constraint firstItem="xTe-ab-0eg" firstAttribute="leading" secondItem="14V-fi-qFm" secondAttribute="trailing" constant="16" id="zh9-Ad-a2f"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnPause" destination="14V-fi-qFm" id="6Aw-3n-5NX"/>
+                        <outlet property="btnPlay" destination="xTe-ab-0eg" id="ogk-7I-AT3"/>
+                        <outlet property="volumeSlider" destination="PGj-00-amY" id="DtA-Si-eIG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

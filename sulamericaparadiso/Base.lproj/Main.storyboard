@@ -49,6 +49,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2eM-u4-Nz0"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="change_volume:" destination="BYZ-38-t0r" eventType="valueChanged" id="c4L-7r-DN6"/>
+                                </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volume-off" translatesAutoresizingMaskIntoConstraints="NO" id="24C-Gn-BJw">
                                 <constraints>

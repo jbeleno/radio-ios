@@ -32,6 +32,10 @@ class RadioPlayer {
         }
     }
     
+    func volume(volume: Float) {
+        player.volume = volume
+    }
+    
     func currentlyPlaying() -> Bool {
         return isPlaying
     }

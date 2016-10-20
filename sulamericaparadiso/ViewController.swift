@@ -35,6 +35,11 @@ class ViewController: UIViewController {
         btnPause.setImage(UIImage(named:"btn-pause"), for: UIControlState.normal)
     }
     
+    @IBAction func change_volume(_ sender: AnyObject) {
+        print("Volume: "+volumeSlider.value.description);
+        RadioPlayer.sharedInstance.volume(volume: volumeSlider.value)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
